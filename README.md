@@ -11,13 +11,18 @@ This is a single project to demonstrate how to set up frontend observability wit
 ## Prerequisites
 
 * A Honeycomb account and INGEST API Key
+*
+## Setup
+
+Manual, but copy `.env.sample` in the root to create a `.env` file, this is **not** checked in. Create your Honeycomb account, an evironment and an ingest key. Add the key to the .env and run `docker-compose up` to boot PostgreSQL and a collector.
+
+Then go to the frontend of interest and run it. The frontends point to the collector, which points to Honeycomb.
 
 ## TODO
 
 * Get the React SPA up there
 * Make the node and Spring Boot server match in features and both access/modify the db
 * Actually set up some real use case?
-* Get ENV working across SPAs to make it easier 
 * Build everything in docker for a true production build setup
 * Add more SPAs (e.g. Svelte, Ember, etc.)
 
