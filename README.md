@@ -11,7 +11,10 @@ This is a single project to demonstrate how to set up frontend observability wit
 ## Prerequisites
 
 * A Honeycomb account and INGEST API Key
-*
+* NodeJS > 20
+* Docker and docker compose
+* For angular, the angular cli installed with `npm install -g @angular/cli`
+
 ## Setup
 
 Manual, but copy `.env.sample` in the root to create a `.env` file, this is **not** checked in. Create your Honeycomb account, an evironment and an ingest key. Add the key to the .env and run `docker-compose up` to boot PostgreSQL and a collector.
